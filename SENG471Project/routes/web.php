@@ -17,4 +17,7 @@ Route::get('/', function () {
 
 Route::get('/userinterface', 'UserInterfaceController@index');
 
+Route::post('/userinterface', 'UserInterfaceController@display');
+
+
 

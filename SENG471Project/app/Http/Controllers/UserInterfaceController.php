@@ -10,4 +10,9 @@ class UserInterfaceController extends Controller
         return view('userinterface');
     }
 
+    public function display()
+    {
+        return request()->all();
+    }
+
 }

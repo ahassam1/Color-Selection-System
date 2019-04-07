@@ -12,7 +12,9 @@ class UserInterfaceController extends Controller
 
     public function display()
     {
-        return request()->all();
+        $data = request()->all();
+        return view('userinterface', $data)->with(compact('data'));
+
     }
 
 }

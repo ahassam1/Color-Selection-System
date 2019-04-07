@@ -34,6 +34,9 @@
 
             <p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
 
+             @if (isset($data))
+            <p>{{dd($data)}}</p>
+            @endif
 
                 </div>
             </div>

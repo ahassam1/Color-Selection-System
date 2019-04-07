@@ -14,7 +14,7 @@
     <body>
             <div class="content">
                 <div class="title m-b-md">
-                    User Interface 
+                    User Interface
 
 
 
@@ -23,15 +23,29 @@
             <form Method = "POST" action = '/userinterface'>
 
             {{csrf_field()}}
+
+            <div>
+              Select Vehicle:<br>
+              <select name="Vehicles">
+                <option value="Sedan">Sedan</option>
+                <option value="Truck">Truck</option>
+                <option value="Hatchback">Hatchback</option>
+              </select>
+            </div>
+
+            <div>
+              Select Color:<br>
+              <select name="Colors">
+                <option value="#ff0000">Red</option>
+                <option value="#0000ff">Blue</option>
+                <option value="#ffffff">White</option>
+                <option value="#000000">Black</option>
+                <option value="#999999">Grey</option>
+              </select>
+            </div>
             
-              First name:<br>
-              <input type="text" name="firstname" value="Mickey">
-              <br>
-              Last name:<br>
-              <input type="text" name="lastname" value="Mouse">
-              <br><br>
               <input type="submit" value="Submit">
-            </form> 
+            </form>
 
             <p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
 

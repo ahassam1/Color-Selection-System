@@ -149,6 +149,13 @@
 
             @if($data['Vehicles'] == 'Sedan')
 
+              @if($data['Colors'] == 'red')
+                <img src ='https://i.gyazo.com/a1c4ab4fc2f148b3088e6bc081a40e8d.png' >
+              @endif
+
+              @if($data['SedanInterior'] == 'darkgrey' && $data['IncludeInterior'] == 'Yes')
+                <img src = 'https://i.gyazo.com/fdb0d37a1ba2fd60415e84acebf876ec.jpg'>
+              @endif
 
             @endif
 

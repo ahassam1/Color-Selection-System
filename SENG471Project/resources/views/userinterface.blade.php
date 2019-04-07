@@ -34,25 +34,59 @@
             if(value == 'Yes' && vehicle == "Sedan")
             {
                 document.getElementById('SedanInterior').style='display:block;';
+                document.getElementById('TruckInterior').style='display:none;';
+                document.getElementById('HatchbackInterior').style='display:none;';
             }
 
             if(value == 'Yes' && vehicle == "Truck")
             {
+                document.getElementById('SedanInterior').style='display:none;';
                 document.getElementById('TruckInterior').style='display:block;';
+                document.getElementById('HatchbackInterior').style='display:none;';
             }
 
             if(value == 'Yes' && vehicle == "Hatchback")
             {
+                document.getElementById('SedanInterior').style='display:none;';
+                document.getElementById('TruckInterior').style='display:none;';
                 document.getElementById('HatchbackInterior').style='display:block;';
             }
 
-}
+        }
+
+            function setFormVehicle(vehicle) {
+
+            var value = document.getElementsByName("IncludeInterior")[0].value;
+
+
+            if(value == 'Yes' && vehicle == "Sedan")
+            {
+                document.getElementById('SedanInterior').style='display:block;';
+                document.getElementById('TruckInterior').style='display:none;';
+                document.getElementById('HatchbackInterior').style='display:none;';
+            }
+
+            if(value == 'Yes' && vehicle == "Truck")
+            {
+                document.getElementById('SedanInterior').style='display:none;';
+                document.getElementById('TruckInterior').style='display:block;';
+                document.getElementById('HatchbackInterior').style='display:none;';
+            }
+
+            if(value == 'Yes' && vehicle == "Hatchback")
+            {
+                document.getElementById('SedanInterior').style='display:none;';
+                document.getElementById('TruckInterior').style='display:none;';
+                document.getElementById('HatchbackInterior').style='display:block;';
+            }
+
+        }
 
             </script>
 
             <div>
               Select Vehicle:<br>
-              <select name="Vehicles">
+              <select name="Vehicles" onchange="setFormVehicle(this.value)">
                 <option value="Sedan">Sedan</option>
                 <option value="Truck">Truck</option>
                 <option value="Hatchback">Hatchback</option>

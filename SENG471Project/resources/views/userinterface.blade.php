@@ -149,7 +149,6 @@
 
             @if($data['Vehicles'] == 'Sedan')
 
-              @if($data['Colors'])
 
             @endif
 

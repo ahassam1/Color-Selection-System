@@ -9,4 +9,5 @@ class UserInterfaceController extends Controller
     {
         return view('userinterface');
     }
+
 }

@@ -31,9 +31,19 @@
             var vehicle = document.getElementsByName("Vehicles")[0].value;
 
 
-            if(value == 'form1' && vehicle == "Sedan")
+            if(value == 'Yes' && vehicle == "Sedan")
             {
-                document.getElementById('form1').style='display:block;';
+                document.getElementById('SedanInterior').style='display:block;';
+            }
+
+            if(value == 'Yes' && vehicle == "Truck")
+            {
+                document.getElementById('TruckInterior').style='display:block;';
+            }
+
+            if(value == 'Yes' && vehicle == "Hatchback")
+            {
+                document.getElementById('HatchbackInterior').style='display:block;';
             }
 
 }
@@ -62,18 +72,34 @@
 
             <div>
             <label>Include Interior View</label>
-            <select id="select1" onchange="setForm(this.value)">
-            <option value="form2">No</option>
-            <option value="form1">Yes</option>
+            <select id="select1" name= "IncludeInterior" onchange="setForm(this.value)">
+            <option value="No">No</option>
+            <option value="Yes">Yes</option>
             </select>
             </div>
 
-            <div id="form1" style="display: none">
+            <div id="SedanInterior" style="display: none">
             Select Interior Color:<br>
-              <select name="Colors">
+              <select name="SedanInterior">
                 <option value="#ff0000">Dark Grey</option>
                 <option value="#0000ff">Jet Black</option>
                 <option value="#ffffff">Dark Wheat</option>
+              </select>
+            </div>
+
+            <div id="TruckInterior" style="display: none">
+            Select Interior Color:<br>
+              <select name="TruckInterior">
+                <option value="#ff0000">Black</option>
+              </select>
+            </div>
+
+            <div id="HatchbackInterior" style="display: none">
+            Select Interior Color:<br>
+              <select name="HatchbackInterior">
+                <option value="#ff0000">Black</option>
+                <option value="#ff0000">Black Galvanized</option>
+                <option value="#ff0000">Black Umber</option>
               </select>
             </div>
 

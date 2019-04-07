@@ -96,11 +96,11 @@
             <div>
               Select Color:<br>
               <select name="Colors">
-                <option value="#ff0000">Red</option>
-                <option value="#0000ff">Blue</option>
-                <option value="#ffffff">White</option>
-                <option value="#000000">Black</option>
-                <option value="#999999">Grey</option>
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+                <option value="white">White</option>
+                <option value="black">Black</option>
+                <option value="grey">Grey</option>
               </select>
             </div>
 
@@ -115,30 +115,30 @@
             <div id="SedanInterior" style="display: none">
             Select Interior Color:<br>
               <select name="SedanInterior">
-                <option value="#ff0000">Dark Grey</option>
-                <option value="#0000ff">Jet Black</option>
-                <option value="#ffffff">Dark Wheat</option>
+                <option value="darkgrey">Dark Grey</option>
+                <option value="black">Jet Black</option>
+                <option value="wheat">Dark Wheat</option>
               </select>
             </div>
 
             <div id="TruckInterior" style="display: none">
             Select Interior Color:<br>
               <select name="TruckInterior">
-                <option value="#ff0000">Black</option>
+                <option value="black">Black</option>
               </select>
             </div>
 
             <div id="HatchbackInterior" style="display: none">
             Select Interior Color:<br>
               <select name="HatchbackInterior">
-                <option value="#ff0000">Black</option>
-                <option value="#ff0000">Black Galvanized</option>
-                <option value="#ff0000">Black Umber</option>
+                <option value="black">Black</option>
+                <option value="Galvanized">Black Galvanized</option>
+                <option value="Umber">Black Umber</option>
               </select>
             </div>
 
 
-            
+
             <input type="submit" value="Submit">
             </form>
 
@@ -149,7 +149,7 @@
 
             @if($data['Vehicles'] == 'Sedan')
 
-            <p> We are in Sedan </p>
+              @if($data['Colors'])
 
             @endif
 

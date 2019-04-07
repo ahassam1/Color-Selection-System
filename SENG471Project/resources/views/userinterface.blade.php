@@ -22,7 +22,8 @@
 
             <form Method = "POST" action = '/userinterface'>
 
-                {{csrf_field()}}
+            {{csrf_field()}}
+            
               First name:<br>
               <input type="text" name="firstname" value="Mickey">
               <br>
@@ -34,8 +35,16 @@
 
             <p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
 
-             @if (isset($data))
-            <p>{{dd($data)}}</p>
+            @if (isset($data))
+
+
+            @if($data['firstname'] == 'Mickey')
+
+            <p> Made it here! </p>
+            @endif
+
+
+
             @endif
 
                 </div>

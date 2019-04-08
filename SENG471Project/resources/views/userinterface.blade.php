@@ -8,13 +8,14 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-
+        <link rel="stylesheet" type="text/css" href="{{ url('/css/style.css') }}">
 
     </head>
     <body>
+      <div id = "banner"> CADA CAR INVENTORY </div>
             <div class="content">
                 <div class="title m-b-md">
-                    User Interface
+                    <h1>User Interface</h1>
 
 
 
@@ -85,7 +86,7 @@
             </script>
 
             <div>
-              Select Vehicle:<br>
+              Select Vehicle Type: <br>
               <select name="Vehicles" onchange="setFormVehicle(this.value)">
                 <option value="Sedan">Sedan</option>
                 <option value="Truck">Truck</option>
@@ -95,8 +96,8 @@
 
             <div>
               Select Color:<br>
-              <select name="Colors">
-                <option value="red">Red</option>
+           <select name="Colors">
+                <option value="red" >Red</option>
                 <option value="blue">Blue</option>
                 <option value="white">White</option>
                 <option value="black">Black</option>
@@ -104,6 +105,7 @@
               </select>
             </div>
 
+          
             <div>
             <label>Include Interior View: <br></label>
             <select id="select1" name= "IncludeInterior" onchange="setForm(this.value)">
@@ -111,7 +113,7 @@
             <option value="Yes">Yes</option>
             </select>
             </div>
-
+            <br>
             <div id="SedanInterior" style="display: none">
             Select Interior Color:<br>
               <select name="SedanInterior">
@@ -150,19 +152,19 @@
 
               @if($data['Vehicles'] == 'Sedan' && $data['IncludeInterior'] == 'Yes')
 
-               and a {{$data['SedanInterior']}} interior. 
+               and a {{$data['SedanInterior']}} interior.
 
               @endif
 
               @if($data['Vehicles'] == 'Truck' && $data['IncludeInterior'] == 'Yes')
 
-               and a {{$data['TruckInterior']}} interior. 
+               and a {{$data['TruckInterior']}} interior.
 
               @endif
 
               @if($data['Vehicles'] == 'Hatchback' && $data['IncludeInterior'] == 'Yes')
 
-               and a {{$data['HatchbackInterior']}} interior. 
+               and a {{$data['HatchbackInterior']}} interior.
 
               @endif
 

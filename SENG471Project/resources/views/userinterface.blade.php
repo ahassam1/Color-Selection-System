@@ -146,9 +146,31 @@
 
             @if (isset($data))
 
+              <p> Your selection was the {{$data["Vehicles"]}} with a {{$data["Colors"]}} exterior
+
+              @if($data['Vehicles'] == 'Sedan' && $data['IncludeInterior'] == 'Yes')
+
+               and a {{$data['SedanInterior']}} interior. 
+
+              @endif
+
+              @if($data['Vehicles'] == 'Truck' && $data['IncludeInterior'] == 'Yes')
+
+               and a {{$data['TruckInterior']}} interior. 
+
+              @endif
+
+              @if($data['Vehicles'] == 'Hatchback' && $data['IncludeInterior'] == 'Yes')
+
+               and a {{$data['Hatchback']}} interior. 
+
+              @endif
+
+              </p>
+
 
             @if($data['Vehicles'] == 'Sedan')
-              <p>In Sedan </p>
+
               @if($data['Colors'] == 'red')
                 <img src ='https://i.gyazo.com/a1c4ab4fc2f148b3088e6bc081a40e8d.png' >
               @endif
@@ -184,7 +206,6 @@
             @endif
 
             @if($data['Vehicles'] == 'Truck')
-              <p>In Truck </p>
               @if($data['Colors'] == 'red')
                 <img src ='https://i.gyazo.com/f438ab27db0cb4326c346b53c565f22d.png' >
               @endif
@@ -212,7 +233,6 @@
             @endif
 
             @if($data['Vehicles'] == 'Hatchback')
-              <p>In Hatchback </p>
               @if($data['Colors'] == 'red')
                 <img src ='https://i.gyazo.com/9cdd2a52e039b0be911bcfb16cd28119.png' >
               @endif

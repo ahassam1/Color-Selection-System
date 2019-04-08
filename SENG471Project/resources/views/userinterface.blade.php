@@ -183,6 +183,34 @@
 
             @endif
 
+            @if($data['Vehicles'] == 'Truck')
+
+              @if($data['Colors'] == 'red')
+                <img src ='https://i.gyazo.com/f438ab27db0cb4326c346b53c565f22d.png' >
+              @endif
+
+              @if($data['Colors'] == 'black')
+                <img src ='https://i.gyazo.com/13ec2535d8e7b3a7c46ddc8f35c47b89.png' >
+              @endif
+
+              @if($data['Colors'] == 'white')
+                <img src ='https://i.gyazo.com/378f1a14b3cfd2ce46e0444acc7067ef.png' >
+              @endif
+
+              @if($data['Colors'] == 'grey')
+                <img src ='https://i.gyazo.com/528ff04e2ca9eaa3c8dacef0f0eb5492.png' >
+              @endif
+
+              @if($data['Colors'] == 'blue')
+                <img src ='https://i.gyazo.com/d8227365f766b442c017bc0ba2b0592d.png' >
+              @endif
+
+              @if($data['TruckInterior'] == 'black' && $data['IncludeInterior'] == 'Yes')
+                <img src = 'https://i.gyazo.com/cb4d6ad12016acccae9d1074491fd76c.jpg'>
+              @endif
+
+            @endif
+
             <p>{{dd($data)}}</p>
 
 

@@ -153,8 +153,32 @@
                 <img src ='https://i.gyazo.com/a1c4ab4fc2f148b3088e6bc081a40e8d.png' >
               @endif
 
+              @if($data['Colors'] == 'black')
+                <img src ='https://i.gyazo.com/1b72fc9baf1617306314a74e5490652b.png' >
+              @endif
+
+              @if($data['Colors'] == 'white')
+                <img src ='https://i.gyazo.com/6029bb45f312193d54bd0f9e3fe140d6.png' >
+              @endif
+
+              @if($data['Colors'] == 'grey')
+                <img src ='https://i.gyazo.com/a12fbaf7b0793bdfd407d60d167f0655.png' >
+              @endif
+
+              @if($data['Colors'] == 'blue')
+                <img src ='https://i.gyazo.com/b2535278e2a0f228d9a20be00c3f5e4c.png' >
+              @endif
+
               @if($data['SedanInterior'] == 'darkgrey' && $data['IncludeInterior'] == 'Yes')
                 <img src = 'https://i.gyazo.com/fdb0d37a1ba2fd60415e84acebf876ec.jpg'>
+              @endif
+
+              @if($data['SedanInterior'] == 'black' && $data['IncludeInterior'] == 'Yes')
+                <img src = 'https://i.gyazo.com/f8572693b4be74fb878e7da45e07ccfc.jpg'>
+              @endif
+
+              @if($data['SedanInterior'] == 'wheat' && $data['IncludeInterior'] == 'Yes')
+                <img src = 'https://i.gyazo.com/a1d774b69803fd72b32b4de66b3c6ed4.jpg'>
               @endif
 
             @endif

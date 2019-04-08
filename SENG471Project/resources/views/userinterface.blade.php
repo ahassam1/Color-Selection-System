@@ -18,7 +18,7 @@
 
 
 
-            <h2>HTML Forms</h2>
+            <h2>Please Choose Your Selections</h2>
 
             <form Method = "POST" action = '/userinterface'>
 
@@ -105,7 +105,7 @@
             </div>
 
             <div>
-            <label>Include Interior View</label>
+            <label>Include Interior View: <br></label>
             <select id="select1" name= "IncludeInterior" onchange="setForm(this.value)">
             <option value="No">No</option>
             <option value="Yes">Yes</option>
@@ -138,11 +138,11 @@
             </div>
 
 
-
+            <br>
             <input type="submit" value="Submit">
             </form>
 
-            <p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+            <p>All images from https://www.chevrolet.ca/en</p>
 
             @if (isset($data))
 

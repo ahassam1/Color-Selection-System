@@ -132,8 +132,8 @@
             Select Interior Color:<br>
               <select name="HatchbackInterior">
                 <option value="black">Black</option>
-                <option value="Galvanized">Black Galvanized</option>
-                <option value="Umber">Black Umber</option>
+                <option value="galvanized">Black Galvanized</option>
+                <option value="umber">Black Umber</option>
               </select>
             </div>
 
@@ -207,6 +207,41 @@
 
               @if($data['TruckInterior'] == 'black' && $data['IncludeInterior'] == 'Yes')
                 <img src = 'https://i.gyazo.com/cb4d6ad12016acccae9d1074491fd76c.jpg'>
+              @endif
+
+            @endif
+
+            @if($data['Vehicles'] == 'Hatchback')
+              @if($data['Colors'] == 'red')
+                <img src ='https://i.gyazo.com/9cdd2a52e039b0be911bcfb16cd28119.png' >
+              @endif
+
+              @if($data['Colors'] == 'black')
+                <img src ='https://i.gyazo.com/9afacb69abd27d6b5b4e298fc18303b2.png' >
+              @endif
+
+              @if($data['Colors'] == 'white')
+                <img src ='https://i.gyazo.com/18a8684972064fa721129471d1329897.png' >
+              @endif
+
+              @if($data['Colors'] == 'grey')
+                <img src ='https://i.gyazo.com/ade7901cab9f87f97c98abbfb50a6aa6.png' >
+              @endif
+
+              @if($data['Colors'] == 'blue')
+                <img src ='https://i.gyazo.com/b31a86a62135f4b7a85364e26881b1b4.png' >
+              @endif
+
+              @if($data['HatchbackInterior'] == 'black' && $data['IncludeInterior'] == 'Yes')
+                <img src = 'https://i.gyazo.com/5ab46345f4ed7aae2057dd11737c869c.jpg'>
+              @endif
+
+              @if($data['HatchbackInterior'] == 'galvanized' && $data['IncludeInterior'] == 'Yes')
+                <img src = 'https://i.gyazo.com/4c8a21e4f3861e684065ee37ee51472d.jpg'>
+              @endif
+
+              @if($data['HatchbackInterior'] == 'umber' && $data['IncludeInterior'] == 'Yes')
+                <img src = 'https://i.gyazo.com/a99fd6a1e38fb2ee0cea258942c34527.jpg'>
               @endif
 
             @endif

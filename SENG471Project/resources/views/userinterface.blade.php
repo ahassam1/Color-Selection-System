@@ -162,7 +162,7 @@
 
               @if($data['Vehicles'] == 'Hatchback' && $data['IncludeInterior'] == 'Yes')
 
-               and a {{$data['Hatchback']}} interior. 
+               and a {{$data['HatchbackInterior']}} interior. 
 
               @endif
 
